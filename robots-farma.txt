@@ -1,0 +1,123 @@
+# Robots.txt - VTEX Store
+User-agent: *
+Allow: /
+
+# Checkout and Cart
+Disallow: /checkout
+Disallow: /checkout/*
+Disallow: /finalizacao/carrinho
+
+# Customer Account Area
+Disallow: /account
+Disallow: /account/*
+Disallow: /login
+Disallow: /Login.partial
+
+# Lists and Wishlist
+Disallow: /listas
+Disallow: /listas/
+Disallow: /listas/*
+Disallow: /lista-teste
+
+# URL parameters that cause duplication
+Disallow: /*?*map=
+Disallow: /*/?map=productClusterIds
+Disallow: /*?O=
+Disallow: /*?PS=
+Disallow: /*&O=
+Disallow: /*&PS=
+Disallow: /*productLinkNotFound
+
+# APIs and internal resources
+Disallow: /api/*
+Disallow: /web-api/*
+Disallow: /no-cache/*
+Disallow: /_secure/*
+
+# Native App
+Disallow: /appnativo
+Disallow: /appnativo/*
+
+# Test and temporary landing pages
+Disallow: /pagina-teste
+Disallow: /pagina-teste/*
+Disallow: /lp/*
+Disallow: /kit-mkt
+Disallow: /kit-mkt/*
+
+# Templates and custom resources
+Disallow: /Custom/Content/Themes/Bemol/Templates/landings
+Disallow: /Custom/Content/Themes/Bemol/Templates/landings/*
+
+# Specific pages
+Disallow: /emprestimo-pessoal
+Disallow: /simulacao-de-juros/
+Disallow: /simulacao-de-juros*
+Disallow: /simulacao-de-juros
+Disallow: /faq-contabemol
+Disallow: /parceirosbemol
+Disallow: /web-api/v1/Shopping/Seller/GetAvailablePointOfSales
+
+# SEO tools
+User-agent: Screaming Frog SEO Spider
+Allow: /
+
+# AI bots and assistants - Indexing allowed
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Main search engine bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+# Undesired bots - Block
+User-agent: EtaoSpider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+# Sitemaps
+Sitemap: https://www.bemolfarma.com.br/sitemap.xml
