@@ -33,6 +33,7 @@ Disallow: /api/*
 Disallow: /web-api/*
 Disallow: /no-cache/*
 Disallow: /_secure/*
+Disallow: /web-api/v1/Shopping/Seller/GetAvailablePointOfSales
 
 # Native App
 Disallow: /appnativo
